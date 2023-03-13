@@ -13,16 +13,18 @@ int main(){
 int root1(int a,int b,int c)
 {
 	int s;
+		s=sqrt((b*b)-(4*a*c));
 	int x=(-b+s)/2*a;
-	s=sqrt(b*b-(4*a*c));
+
 	printf("the root is %d\n",x);
 	return x;
 }
 int root2(int a,int b,int c)
 {
     int s;
-    int y=(-b+s)/2*a;
-    s=sqrt(b*b-(4*a*c));
+    s=sqrt((b*b)-(4*a*c));
+    int y=(-b-s)/2*a;
+    
 
     printf("the root is %d",y);
     return y;
