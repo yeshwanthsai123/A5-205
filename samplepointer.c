@@ -2,10 +2,17 @@
 
 int main()
 {
-	int addr;
-	int addr2;
-	int addr3;
-	printf("the address of addr is %u\n",&addr);//gives address or location where this addr ,addr3,addr3 are stored//
-    printf("the address of addr2 is %u\n",&addr2);
-    printf("the address of addr3 is %u",&addr3);//
+
+int i;
+int *j;
+j=&i;
+scanf("%d",&i);
+printf("addr of i is =%u\n",&i);
+printf("addr of i is =%u\n",j);
+printf("addr of j is =%u\n",&j);
+printf("value of i is %d\n",i);
+printf("value of i is =%d\n",*(&i));
+printf("value of i is =%d\n",*j);
+
+
 }
