@@ -1,9 +1,7 @@
 #include<stdio.h>
-
 int main()
 {
-	int n;
-	int a[100000];
+	int n,a[100000];
 	printf("Enter the size:");
 	scanf("%d",&n);
 	int i;
@@ -24,7 +22,6 @@ for(i=0;i<n-1;i++)
 	for(j=0;j<n-i-1;j++)   //ekkada manam code ni order lo pettadaniki //
 	{
 		if(a[j]>a[j+1])      // we can also use i<n in spite of i<n-1
-		
 		{                      //and inplace of j<n-1-i we can use j<n-1
 		temp=a[j];
 		a[j]=a[j+1];
@@ -45,7 +42,6 @@ scanf("%d",&go);
 int flag=0;
 while(low<=high)
 {
-	
 	int middle=(high+low)/2;
 	if(go==a[middle])
 	{
@@ -62,10 +58,8 @@ while(low<=high)
 }
 if(flag==1)
 {
-	printf("%d has been found at ",go);
-	
+	printf("%d has been found at ",go);	
 }	
-
 else
 {
 	printf("not found");
